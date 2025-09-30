@@ -54,6 +54,10 @@ if($_SERVER['REQUEST_METHOD'] === 'POST' &&
         $_SESSION['otp-pop'] = true;
 
         sendOTP($email, $otp_code, $name, $purpose, $expires_at);
+        
+        // stop resubmission of otp when it was close
+        header("Location: " . $_SERVER['PHP_SELF']);
+        exit();
       } else{
         // if off otp skip
         $_SESSION['user-id'] = $user_id;
