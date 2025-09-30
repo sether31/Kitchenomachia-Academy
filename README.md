@@ -22,7 +22,7 @@
 
 #### 1. **Clone the repository:**
 ```cmd
-git clone git@github.com:sether31/Kitchenomachia-Academy.git
+git clone https://github.com/sether31/Kitchenomachia-Academy.git
 ```
 
 #### 2. **Install dependencies:**
