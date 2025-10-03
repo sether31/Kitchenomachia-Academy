@@ -84,7 +84,7 @@
               if($lesson_video){
                 echo "
                   <video controls>
-                    <source src='$lesson_video' type='video/mp4'>    
+                    <source src='../../../$lesson_video' type='video/mp4'>    
                   </video>
                 ";
               } else{
